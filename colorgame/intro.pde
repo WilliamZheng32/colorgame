@@ -10,12 +10,13 @@ void intro() {
     randomcolor = (int) random(0, 5);
   }
 
+  //colourgame text
   textFont(Bubblegum);
   textSize(textsize);
   fill(colors[randomcolor]);
-  text("COLOR", 400, 200);
+  text("COLOUR", 400, 200);
   text("GAME", 400, 300);
-
+  
   //startbutton
   fill(white);
   tactileRect(300, 400, 200, 100, white);
@@ -23,7 +24,6 @@ void intro() {
   fill(black);
   text("START", 400, 450);
 }
-//
 
 void introclicks() {
   if (rectbuttons(300, 400, 200, 100)) {

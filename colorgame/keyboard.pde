@@ -1,9 +1,8 @@
 void keyPressed() {
- 
 }
 
 void keyReleased() {
-   if (mode == GAME) {
+  if (mode == GAME) {
     if (keyCode == LEFT) {
       if (randomcolor != randomword) {
         correct();
@@ -13,6 +12,7 @@ void keyReleased() {
         incorrect();
       }
     }
+
     if (keyCode == RIGHT) {
       if (randomcolor == randomword) {
         correct();
