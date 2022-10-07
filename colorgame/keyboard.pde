@@ -1,17 +1,26 @@
-void keyPressed(){
-   if(keyCode == LEFT){
-   leftkey= true; 
-  }
-  if(keyCode == RIGHT){
-   rightkey=true; 
-  }  
+void keyPressed() {
+ 
 }
 
-void keyReleased(){
-    if(keyCode == LEFT){
-   leftkey= false; 
-  }
-  if(keyCode == RIGHT){
-   rightkey=false; 
+void keyReleased() {
+   if (mode == GAME) {
+    if (keyCode == LEFT) {
+      if (randomcolor != randomword) {
+        correct();
+        randomize();
+      } 
+      else if ( randomcolor == randomword) {
+        incorrect();
+      }
+    }
+    if (keyCode == RIGHT) {
+      if (randomcolor == randomword) {
+        correct();
+        randomize();
+      } 
+      else if (randomcolor != randomword) {
+        incorrect();
+      }
+    }
   }
 }

@@ -1,5 +1,4 @@
 void intro() {
-
   music.play();
   image(gif[f], 0, 0, width, height);
   f++;
@@ -24,6 +23,7 @@ void intro() {
   fill(black);
   text("START", 400, 450);
 }
+//
 
 void introclicks() {
   if (rectbuttons(300, 400, 200, 100)) {

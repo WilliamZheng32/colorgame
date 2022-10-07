@@ -38,21 +38,6 @@ void game() {
   if (timer<=0) {
     incorrect();
   }
-   if (leftkey == true && randomcolor != randomword) {
-    correct();
-    randomize();
-  }
-   else if (rightkey == true && randomcolor == randomword) {
-    correct();
-    randomize();
-  }
-  else if (leftkey == true && randomcolor == randomword) {
-    incorrect();
-  }
-  else if (rightkey == true && randomcolor != randomword) {
-    incorrect();
-  } 
-
  
 }
 

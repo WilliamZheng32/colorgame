@@ -62,7 +62,7 @@ void setup() {
   mode = INTRO;
   score = 0;
   highscore = 0;
-  timer = 200;
+  timer = 150;
   textsize = 100;
   vx = 400;
 
@@ -141,7 +141,7 @@ void tactileCircle(int x, int y, int d, color f) {
 
 void correct() {
   score+=1;
-  timer = 200;
+  timer = 150;
   success.rewind();
   success.play();
   randomcolor = (int) random(0, 5);
@@ -157,7 +157,6 @@ void incorrect() {
 }
 
 void randomize() {
-
   //matching
   if (randomnumber == 0) {
     randomcolor = randomword;
